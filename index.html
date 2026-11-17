@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Bank Ltd.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Secure Bank Ltd.</h1>
+    <p class="intro">Simple Banking Calculator</p>
+
+    <div class="container">
+        <h2>1. Loan Eligibility</h2>
+        <label>Monthly Income (Rs.)</label>
+        <input type="number" id="income" value="40000">
+
+        <label>Existing EMI (Rs.)</label>
+        <input type="number" id="oldEmi" value="5000">
+
+        <label>Credit Score</label>
+        <input type="number" id="score" value="700">
+
+        <button onclick="checkLoan()">Check Loan</button>
+        <p id="loanResult" class="result"></p>
+    </div>
+
+    <div class="container">
+        <h2>2. EMI Calculator</h2>
+        <label>Loan Amount (Rs.)</label>
+        <input type="number" id="amount" value="300000">
+
+        <label>Annual Interest Rate (%)</label>
+        <input type="number" id="rate" value="8">
+
+        <label>Time (Years)</label>
+        <input type="number" id="years" value="5">
+
+        <button onclick="calculateEMI()">Calculate EMI</button>
+        <p id="emiResult" class="result"></p>
+    </div>
+
+    <div class="container">
+        <h2>3. Simple Interest Calculator</h2>
+        <label>Principal Amount (Rs.)</label>
+        <input type="number" id="principal" value="20000">
+
+        <label>Interest Rate (%)</label>
+        <input type="number" id="interestRate" value="5">
+
+        <label>Time (Years)</label>
+        <input type="number" id="time" value="2">
+
+        <button onclick="calculateInterest()">Calculate Interest</button>
+        <p id="interestResult" class="result"></p>
+    </div>
+
+    <div class="container">
+        <h2>4. Account Summary</h2>
+        <label>Opening Balance (Rs.)</label>
+        <input type="number" id="balance" value="10000">
+
+        <label>Monthly Deposit (Rs.)</label>
+        <input type="number" id="deposit" value="2000">
+
+        <label>Monthly Withdrawal (Rs.)</label>
+        <input type="number" id="withdraw" value="500">
+
+        <label>Number of Months</label>
+        <input type="number" id="monthCount" value="6">
+
+        <button onclick="accountSummary()">Show Summary</button>
+        <div id="accountResult" class="result"></div>
+    </div>
+
+    <div class="container">
+        <h2>5. Account Type</h2>
+        <label>Select Account</label>
+        <select id="accountType">
+            <option value="savings">Savings Account</option>
+            <option value="current">Current Account</option>
+            <option value="salary">Salary Account</option>
+        </select>
+        <button onclick="showAccountType()">Show Details</button>
+        <p id="typeResult" class="result"></p>
+    </div>
+
+    <footer>Student JavaScript Project | Secure Bank Ltd. (Demo)</footer>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

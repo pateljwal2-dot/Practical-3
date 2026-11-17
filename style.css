@@ -1,0 +1,102 @@
+/* Simple CSS for the banking project */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    color: #123b63;
+    margin-bottom: 5px;
+}
+
+.intro {
+    text-align: center;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.container {
+    background-color: white;
+    max-width: 600px;
+    margin: 18px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+h2 {
+    color: #174f7a;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #0e4e82;
+}
+
+.result {
+    background-color: #eef6fc;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #bbb;
+    padding: 7px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    margin: 30px 0 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
